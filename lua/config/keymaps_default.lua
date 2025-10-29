@@ -18,9 +18,6 @@ keymap.set("n", "N", "Nzz", { noremap = true, silent = true })
 keymap.set("n", "x", '"_x', { noremap = true, silent = true })
 keymap.set("n", "<leader>/", LazyVim.pick("live_grep", { root = false }), { desc = "Grep (cwd)" })
 
--- 用 jk 退出插入模式
-keymap.set("i", "jk", "<Esc>", { desc = "Exit insert mode", noremap = true, silent = true })
-
 if LazyVim.has("mini.pairs") then
   -- for mini.pairs
   local map_bs = function(lhs, rhs)
