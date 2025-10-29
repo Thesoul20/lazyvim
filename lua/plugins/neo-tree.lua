@@ -45,5 +45,14 @@ return {
         Y = "copy_selector",
       },
     },
+
+    -- 👇 这里是新增的配置，让隐藏文件（dotfiles）显示出来
+    filesystem = {
+      filtered_items = {
+        visible = true,        -- 显示被过滤的项目（灰色显示）
+        hide_dotfiles = false, -- 不隐藏以点开头的文件/目录
+        hide_gitignored = false, -- 不隐藏 .gitignore 中的文件（可选）
+      },
+    },
   },
 }
