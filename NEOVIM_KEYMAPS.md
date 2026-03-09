@@ -173,6 +173,8 @@
 > 仅在 `markdown` 文件（marksman attach 后）可用
 
 - `<leader>cP`：从剪贴板粘贴图片（`PasteImage`）
+- `<leader>cU`：粘贴图片后上传图床并插入链接（`PasteImageToCloud`）
+- `:PasteImageToCloud`：命令方式执行图床上传插入
 - `<leader>ct`：将选区按 `Tab` 分隔转换为 Markdown 表格
 - `<leader>cT`：输入分隔符后，将选区转换为 Markdown 表格
 
