@@ -8,6 +8,7 @@
   "catppuccin": { "branch": "main", "commit": "234fc048de931a0e42ebcad675bf6559d75e23df" },
   "cmp-dap": { "branch": "master", "commit": "db7ad7856309138ec31627271ac17a30e9d342ed" },
   "cmp-dotenv": { "branch": "main", "commit": "4dd53aab60982f1f75848aec5e6214986263325e" },
+  "codecompanion-history.nvim": { "branch": "main", "commit": "bc1b4fe06eaaf0aa2399be742e843c22f7f1652a" },
   "codecompanion.nvim": { "branch": "main", "commit": "462924cfcff86a9e054d571df6c911a690aff4ec" },
   "conform.nvim": { "branch": "master", "commit": "26c02e1155a4980900bdccabca4516f4c712aae9" },
   "copilot.lua": { "branch": "master", "commit": "389cfc58122b076e2aad1f9f34d1dfdd5a5bfd0e" },
