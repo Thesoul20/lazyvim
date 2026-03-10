@@ -21,6 +21,28 @@ keymap.set("n", "<leader>/", LazyVim.pick("live_grep", { root = false }), { desc
 -- 用 jk 退出插入模式
 keymap.set("i", "jk", "<Esc>", { desc = "Exit insert mode", noremap = true, silent = true })
 
+-- Snacks floating terminal
+keymap.set({ "n", "t" }, "<leader>tf", function()
+  Snacks.terminal(nil, {
+    cwd = vim.uv.cwd(),
+    win = { position = "float" },
+  })
+end, { desc = "Terminal (float cwd)" })
+
+keymap.set({ "n", "t" }, "<leader>tF", function()
+  Snacks.terminal(nil, {
+    cwd = LazyVim.root(),
+    win = { position = "float" },
+  })
+end, { desc = "Terminal (float root)" })
+
+keymap.set({ "n", "t" }, "<M-`>", function()
+  Snacks.terminal(nil, {
+    cwd = LazyVim.root(),
+    win = { position = "float" },
+  })
+end, { desc = "Terminal (float root)" })
+
 if LazyVim.has("mini.pairs") then
   -- for mini.pairs
   local map_bs = function(lhs, rhs)
