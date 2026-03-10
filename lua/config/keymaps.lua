@@ -20,6 +20,7 @@ keymap.set("n", "<leader>/", LazyVim.pick("live_grep", { root = false }), { desc
 
 -- 用 jk 退出插入模式
 keymap.set("i", "jk", "<Esc>", { desc = "Exit insert mode", noremap = true, silent = true })
+keymap.set("t", "jk", [[<C-\><C-n>]], { desc = "Terminal normal mode", noremap = true, silent = true })
 
 -- Snacks floating terminal
 keymap.set({ "n", "t" }, "<leader>tf", function()
