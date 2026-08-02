@@ -23,6 +23,20 @@ keymap.set("i", "jk", "<Esc>", { desc = "Exit insert mode", noremap = true, sile
 keymap.set("t", "jk", [[<C-\><C-n>]], { desc = "Terminal normal mode", noremap = true, silent = true })
 
 -- Snacks floating terminal
+keymap.set({ "n", "t" }, "<leader>ft", function()
+  Snacks.terminal(nil, {
+    cwd = LazyVim.root(),
+    win = { position = "float" },
+  })
+end, { desc = "Terminal (float root)" })
+
+keymap.set({ "n", "t" }, "<leader>fT", function()
+  Snacks.terminal(nil, {
+    cwd = vim.uv.cwd(),
+    win = { position = "float" },
+  })
+end, { desc = "Terminal (float cwd)" })
+
 keymap.set({ "n", "t" }, "<leader>tf", function()
   Snacks.terminal(nil, {
     cwd = vim.uv.cwd(),
