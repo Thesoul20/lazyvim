@@ -63,7 +63,10 @@ local choose_dap_element = function(callback)
 end
 
 return {
-  { import = "lazyvim.plugins.extras.dap" },
+  -- NOTE: LazyVim 16.0.1's single_import cannot resolve directory-root extras
+  -- (e.g. `lazyvim.plugins.extras.dap`), so import the files explicitly.
+  { import = "lazyvim.plugins.extras.dap.core" },
+  { import = "lazyvim.plugins.extras.dap.nlua" },
   {
     "saghen/blink.cmp",
     optional = true,
